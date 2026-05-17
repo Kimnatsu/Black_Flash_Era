@@ -568,6 +568,8 @@ header{
 
     gap:14px;
 
+    align-items:start;
+
 }
 
 /* UR (6칸) */
