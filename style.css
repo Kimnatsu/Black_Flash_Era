@@ -312,10 +312,13 @@ header{
 /* SKILL */
 
 .skill-grid{
+
     display:grid;
-    grid-template-columns:1fr 1fr;
 
     gap:14px;
+
+    align-items:start;
+
 }
 
 .skill-box{
@@ -443,28 +446,48 @@ header{
 
     .character-grid{
         grid-template-columns:repeat(4,1fr);
-
         gap:10px;
     }
 
     .tier-character-list{
-
         grid-template-columns:repeat(4,1fr);
-
         gap:10px;
-
     }
 
-    /* 모바일 팝업 이미지 수정 */
+    /* 모바일 팝업 카드 느낌 */
+
+    .popup{
+        padding:10px;
+    }
+
+    .popup-content{
+        width:100%;
+        max-width:100%;
+        max-height:92vh;
+
+        border-radius:20px;
+
+        overflow:hidden;
+
+        background:#000;
+    }
+
+    /* 모바일 팝업 이미지 */
 
     .popup-image{
         width:100%;
 
-        height:auto;
-
-        max-height:65vh;
+        max-height:75vh;
 
         object-fit:contain;
+
+        display:block;
+
+        background:#000;
+    }
+
+    .popup-body{
+        padding:18px;
     }
 
     .popup-title{
@@ -477,7 +500,6 @@ header{
 
     .badge{
         bottom:-8px;
-
         left:6px;
 
         padding:5px 10px;
@@ -486,7 +508,6 @@ header{
     }
 
 }
-
 /* ROLE FILTER */
 
 .role-filter{
